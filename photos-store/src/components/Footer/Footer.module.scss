@@ -1,0 +1,56 @@
+.footer{
+    background-color:#000000;
+    color: white;
+        &__container{
+            display: flex;
+            padding: 50px;
+            justify-content: center;
+                hr{
+                        text-align: center;
+                }
+                .links{
+                    position: relative;
+                    text-align: start;
+                    padding: 0px 60px;
+                    &__input{
+                    position: relative;
+                    padding: 0px 60px;
+                    text-align: start;
+                        img{
+                            position: absolute;
+                        }
+                        .firstImg{
+                            top: 117px;
+                            left: 203px;
+                        }
+                        .secondImg{
+                            top: 117px;
+                            left: 230px;
+                        }
+                        input{
+                            width: 280px;
+                            height: 28px;
+                            border-radius: 50px;
+                        }
+                        .circle{
+                            position: absolute;
+                            border-radius: 50%;
+                            width: 27px;
+                            height: 27px;
+                            background-color:#51AD33;
+                            top: 67px;
+                            right: 67px;
+                                img{
+                                    position: absolute;
+                                    top: 5px;
+                                    right: 4px;
+                                }
+                        }       
+                        input::placeholder{
+                            padding: 10px;
+                        }
+
+                    }
+                } 
+        }
+}

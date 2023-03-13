@@ -1,0 +1,161 @@
+.camerasPage {
+  padding: 0 130px 75px;
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__link {
+    ul {
+      text-align: left;
+      list-style: none;
+      display: flex;
+      margin: 20px 0 37px 0;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 26px;
+
+      a {
+        color: #000;
+        text-decoration: none;
+      }
+
+      .arrow {
+        margin: 0 10px;
+      }
+
+      li:last-child a {
+        color: #7D7D7D;
+      }
+    }
+  }
+
+  &__container {
+    display: flex;
+
+    .filtration {
+      width: 300px;
+
+      .title {
+        margin-bottom: 44px;
+        text-transform: uppercase;
+        font-style: normal;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 27px;
+        text-align: left;
+      }
+
+      .inputTitle {
+        margin: 60px 0 17px;
+        font-size: 20px;
+        text-align: left;
+      }
+
+      .priceForm {
+        display: flex;
+        align-items: center;
+
+        input {
+          width: 65px;
+          box-sizing: border-box;
+          border-radius: 5px;
+          padding: 9px 12px;
+          border: 1px solid #51AD33;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 14px;
+          text-align: center;
+        }
+
+        input:focus {
+          outline: none;
+        }
+
+        span {
+          padding: 0 7px;
+          font-size: 18px;
+        }
+
+        .submit {
+          margin-left: 9px;
+          height: 32px;
+          width: 52px;
+          background: #51AD33;
+          border-radius: 5px;
+          color: #FFFFFF;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 14px;
+          text-align: center;
+          cursor: pointer;
+        }
+      }
+
+      .optionsForm {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+
+        .inputsContainer {
+          display: flex;
+          flex-direction: column;
+
+          label {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+
+            span {
+              font-size: 18px;
+              font-weight: 400;
+              line-height: 1.5;
+            }
+
+            input {
+              width: 16px;
+              height: 16px;
+              position: absolute;
+              z-index: -1;
+              opacity: 0;
+            }
+
+            input + span {
+              display: inline-flex;
+              align-items: center;
+              user-select: none;
+            }
+
+            input + span::before {
+              content: '';
+              width: 16px;
+              height: 16px;
+              flex-shrink: 0;
+              flex-grow: 0;
+              border: 1px solid #98A1AF;
+              border-radius: 2px;
+              margin-right: 12px;
+              cursor: pointer;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+
+            input:hover + span::before {
+              border-color: #51AD33;
+            }
+
+            input:checked + span::before {
+              content: "✔";
+              font-size: 14px;
+              color: #fff;
+              border-color: #51AD33;
+              background-color: #51AD33;
+            }
+          }
+        }
+      }
+    }
+  }
+}

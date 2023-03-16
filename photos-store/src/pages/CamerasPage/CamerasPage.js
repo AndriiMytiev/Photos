@@ -2,6 +2,10 @@ import React, {useEffect, useRef, useState} from 'react';
 import styles from './CamerasPage.module.scss';
 import {NavLink} from 'react-router-dom';
 
+import { collection, getDocs } from 'firebase/firestore';
+import {db} from '../../firebase';
+
+
 // const cameras = [
 // 	{
 // 		id: 1,
@@ -46,6 +50,8 @@ const CamerasPage = () => {
 	const [maxPrice, setMaxPrice] = useState(50000);
 	const [options, setOptions] = useState({});
 
+	const [data, setData] = useState([]);
+
 	const formPriceRef = useRef(null);
 	const formOptionsRef = useRef(null);
 
@@ -58,12 +64,25 @@ const CamerasPage = () => {
 	};
 
 	useEffect(() => {
+		(async function() {
+			const productsArray = [];
+			const querySnapshot = await getDocs(collection(db, 'covers'));
+			querySnapshot.forEach((doc) => {
+				// console.log(`${doc.id} => ${doc.data()}`);
+				productsArray.push(doc.data());
+				console.log(doc.data());
+			});
+			setData(productsArray);
+		})();
+	}, []);
+
+	useEffect(() => {
 		console.log(minPrice, maxPrice);
 	}, [minPrice, maxPrice]);
 
 	useEffect(() => {
-		console.log(options);
-	}, [options]);
+		console.log(data);
+	}, [data]);
 
 
 	const submitHandler = (e) => {

@@ -7,14 +7,14 @@ const NavBar = () => {
 	return (
 		<div className={styles.NavBar}>
 			<div className={styles.NavBar__container}>
-				<NavLink to='one'>Цифрова техніка</NavLink>
-				<NavLink to='two'>Оптика на фото</NavLink>
-				<NavLink to='three'>Аксесуари</NavLink>
-				<NavLink to='four'>Чохли</NavLink>
-				<NavLink to='five'>Студійне обладнання</NavLink>
-				<NavLink to='six'>Штативи</NavLink>
+				<NavLink to='/'>Цифрова техніка</NavLink>
+				<NavLink to='/'>Оптика на фото</NavLink>
+				<NavLink to='/'>Аксесуари</NavLink>
+				<NavLink to='/'>Чохли</NavLink>
+				<NavLink to='/'>Студійне обладнання</NavLink>
+				<NavLink to='/'>Штативи</NavLink>
 				<NavLink to='cameras'>Фотоальбоми</NavLink>
-				<NavLink to='eight'>Фотокартки</NavLink>
+				<NavLink to='/'>Фотокартки</NavLink>
 			</div>
 		</div>
 	);

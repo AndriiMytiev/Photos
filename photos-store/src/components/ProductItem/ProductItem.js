@@ -1,10 +1,15 @@
 import React, {useState} from 'react';
 import styles from './ProductItem.module.scss';
 import PropTypes from 'prop-types';
+import {useDispatch} from 'react-redux';
+import {addToCart} from '../../store/cartSlice';
 
 // eslint-disable-next-line react/prop-types
 const ProductItem = ({item}) => {
 	const [mouseDown, setMouseDown] = useState(false);
+
+	const dispatch = useDispatch();
+
 	return (
 		<div className={styles.prodItem}
 			onMouseEnter={() => setMouseDown(true)}
@@ -21,7 +26,10 @@ const ProductItem = ({item}) => {
 						{item.available ? 'в наявності' : 'нема в наявності'}
 					</p>
 					<img
-						src='https://firebasestorage.googleapis.com/v0/b/abc-photos-bdafe.appspot.com/o/CartIcon.png?alt=media&token=018d432a-0482-43f0-adb1-43ab30091bff'/>
+						src='https://firebasestorage.googleapis.com/v0/b/abc-photos-bdafe.appspot.com/o/CartIcon.png?alt=media&token=018d432a-0482-43f0-adb1-43ab30091bff'
+						onClick={() => dispatch(addToCart(item))}
+						className={styles.cartIcon}
+					/>
 				</div>
 			</div>
 			<div className={styles.descriptCont}>

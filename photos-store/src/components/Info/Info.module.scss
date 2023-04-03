@@ -1,71 +1,99 @@
 .info {
-    background-color: #FFFFFF;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-        &__container{
-            position: relative;
-            img{
-                margin: 20px;
-            }
-            input{
-                margin: 20px;
-                width: 451px;
-                height: 40px;
-                border-radius: 30px;
-                border-color: #E7E9EB;
-                padding: 0px 20px;
-                border-color: #E7E9EB;
-                color:#D1D3D4;
-            }
-            input::placeholder{
-                color:#D1D3D4;
-            }
-            select{
-                width: 220px;
-                height: 20px;
-                border-color: white;
-                font-size: 16px;
-            font-weight: bold;
-            }
-            .circle{
-                border-radius: 50%;
-                width: 32px;
-                height: 32px;
-                position: absolute;
-                background-color: #C2C8D0;
-                top: 39%;
-                right: 31%;
+  background-color: #FFFFFF;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
 
-                    img{
-                        position: absolute;
-                        margin: 0;
-                        top: 7px;
-                        right: 7px;
-                    }
-            }
+  &__container {
+    position: relative;
+
+    img {
+      margin: 20px;
     }
-        &__cart{
-             position: relative;
-             margin-left: 90px;   
-             .circle{
-                border-radius: 50%;
-                position: absolute;
-                background-color: #C2C8D0;
-                top: 30px;
-                right: 67px;
-                width: 41px;
-                height: 41px;
-                img{
-                    position: absolute;
-                    margin: 0;
-                    top: 12px;
-                    right: 11px;
-            }
-              }
-                p {
-                    padding-top: 20px;
-                }
-            
-             }
+
+    input {
+      margin: 20px;
+      width: 451px;
+      height: 40px;
+      border-radius: 30px;
+      border-color: #E7E9EB;
+      padding: 0px 20px;
+      color: #D1D3D4;
     }
+
+    input::placeholder {
+      color: #D1D3D4;
+    }
+
+    select {
+      width: 220px;
+      height: 20px;
+      border-color: white;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .circle {
+      border-radius: 50%;
+      width: 32px;
+      height: 32px;
+      position: absolute;
+      background-color: #C2C8D0;
+      top: 39%;
+      right: 31%;
+
+      img {
+        position: absolute;
+        margin: 0;
+        top: 7px;
+        right: 7px;
+      }
+    }
+  }
+
+  &__cart {
+    position: relative;
+    margin-left: 90px;
+    display: flex;
+    align-items: center;
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .circle {
+      border-radius: 50%;
+      position: absolute;
+      background-color: #C2C8D0;
+      top: 30px;
+      right: 67px;
+      width: 41px;
+      height: 41px;
+      margin-right: 10px;
+
+      img {
+        position: absolute;
+        margin: 0;
+        top: 12px;
+        right: 11px;
+      }
+
+      .amount {
+        position: absolute;
+        top: 10px;
+        left: -15px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #51AD33;
+        font-size: 10px;
+        color: #fff;
+        font-weight: bold;
+      }
+    }
+  }
+}

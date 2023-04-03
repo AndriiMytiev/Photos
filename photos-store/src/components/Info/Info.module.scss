@@ -5,9 +5,9 @@
     justify-content: center;
         &__container{
             position: relative;
-            img{
-                margin: 20px;
-            }
+            display: flex;
+            align-items: center;
+
             input{
                 margin: 20px;
                 width: 451px;
@@ -34,8 +34,8 @@
                 height: 32px;
                 position: absolute;
                 background-color: #C2C8D0;
-                top: 39%;
-                right: 31%;
+                top: 30%;
+    right: 37%;;
 
                     img{
                         position: absolute;
@@ -52,20 +52,17 @@
                 border-radius: 50%;
                 position: absolute;
                 background-color: #C2C8D0;
-                top: 30px;
-                right: 67px;
+                top: 6px;
+                right: 71px;
                 width: 41px;
                 height: 41px;
                 img{
                     position: absolute;
                     margin: 0;
-                    top: 12px;
-                    right: 11px;
+                    top: 9px;
+                    right: 9px;
             }
               }
-                p {
-                    padding-top: 20px;
-                }
             
              }
     }

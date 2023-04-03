@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "image": "../img/camera.svg",
+        "name": "Canon PowerShot G9X II",
+        "price": 21473,
+        "description": "Матрица 22.3 x 14.9 мм, 24.2 Мп поддержка карт памяти SD/SDHC/SDXCСенсорный ЖК-дисплей с переменным углом наклона  Clear View II TFT 3 / FullHD-видео / питание от литий-ионного аккумулятора / 131 x 76.2 x 99.9 мм, 532",
+        "available": true
+    },
+    {
+        "id": 2,
+        "image": "../img/camera.svg",
+        "name": "Canon PowerShot G9X II Silver",
+        "price": 21473,
+        "description": "Матрица 22.3 x 14.9 мм, 24.2 Мп поддержка карт памяти SD/SDHC/SDXCСенсорный ЖК-дисплей с переменным углом наклона  Clear View II TFT 3 / FullHD-видео / питание от литий-ионного аккумулятора / 131 x 76.2 x 99.9 мм, 532",
+        "available": false
+    },
+    {
+        "id": 3,
+        "image": "../img/camera.svg",
+        "name": "Canon PowerShot G9X II Silver",
+        "price": 21473,
+        "description": "Матрица 22.3 x 14.9 мм, 24.2 Мп поддержка карт памяти SD/SDHC/SDXCСенсорный ЖК-дисплей с переменным углом наклона  Clear View II TFT 3 / FullHD-видео / питание от литий-ионного аккумулятора / 131 x 76.2 x 99.9 мм, 532",
+        "available": false
+    
+    },
+    {
+        "id": 4,
+        "image": "../img/camera.svg",
+        "name": "Canon PowerShot G9X II Silver",
+        "price": 21473,
+        "description": "Матрица 22.3 x 14.9 мм, 24.2 Мп поддержка карт памяти SD/SDHC/SDXCСенсорный ЖК-дисплей с переменным углом наклона  Clear View II TFT 3 / FullHD-видео / питание от литий-ионного аккумулятора / 131 x 76.2 x 99.9 мм, 532",
+        "available": false
+    
+    },
+    {
+        "id": 5,
+        "image": "../img/camera.svg",
+        "name": "Canon PowerShot G9X II Silver",
+        "price": 21473,
+        "description": "Матрица 22.3 x 14.9 мм, 24.2 Мп поддержка карт памяти SD/SDHC/SDXCСенсорный ЖК-дисплей с переменным углом наклона  Clear View II TFT 3 / FullHD-видео / питание от литий-ионного аккумулятора / 131 x 76.2 x 99.9 мм, 532",
+        "available": true       
+    }
+]

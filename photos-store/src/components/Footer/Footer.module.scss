@@ -5,9 +5,6 @@
             display: flex;
             padding: 50px;
             justify-content: center;
-                hr{
-                        text-align: center;
-                }
                 .links{
                     position: relative;
                     text-align: start;
@@ -20,11 +17,11 @@
                             position: absolute;
                         }
                         .firstImg{
-                            top: 117px;
+                            top: 112px;
                             left: 203px;
                         }
                         .secondImg{
-                            top: 117px;
+                            top: 112px;
                             left: 230px;
                         }
                         input{
@@ -42,8 +39,8 @@
                             right: 67px;
                                 img{
                                     position: absolute;
-                                    top: 5px;
-                                    right: 4px;
+                                    top: 6px;
+                                    right: 9px;
                                 }
                         }       
                         input::placeholder{
@@ -53,4 +50,14 @@
                     }
                 } 
         }
+        hr{
+            text-align: center;
+            width: 1700px;
+            background-color:#5E5C5C;
+    }
+        &__copyright{
+            display: flex;
+            padding:20px;
+            justify-content: center;
+}
 }

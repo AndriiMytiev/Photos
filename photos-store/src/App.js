@@ -4,6 +4,9 @@ import Info from './components/Info/Info';
 import Footer from './components/Footer/Footer';
 import { Switch, Route } from 'react-router-dom';
 import NavBar from './components/NavBar/NavBar';
+import  BenroSlider  from './components/BenroSlider/BenroSlider';
+import ProductSlider from './components/ProductSlider/ProductSlider';
+import FeaturesSlider from './components/FeaturesSlider/FeaturesSlider';
 
 function App() {
 	return (
@@ -21,6 +24,9 @@ function App() {
 				<Route path="eight"></Route>
 				<NavBar />
 			</Switch>
+			<BenroSlider />
+			<ProductSlider />
+			<FeaturesSlider />
 			<Footer />
 		</div>
 	);

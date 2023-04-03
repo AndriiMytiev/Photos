@@ -36,9 +36,11 @@ const Footer = () => {
 					<img className={styles.firstImg} src='./img/instagram.svg'/>
 					<img className={styles.secondImg} src='./img/facebook.svg'/>
 				</div>
-				<hr></hr>
 			</div>
-			
+			<hr></hr>
+			<div className={styles.footer__copyright}>
+				<p>© abcphoto 2020 - Всі права захищені.</p>
+			</div>
 		</div>
 	);
 };

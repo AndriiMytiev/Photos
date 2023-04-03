@@ -5,6 +5,8 @@ import Footer from './components/Footer/Footer';
 import { Switch, Route } from 'react-router-dom';
 import NavBar from './components/NavBar/NavBar';
 import CamerasPage from './pages/CamerasPage/CamerasPage';
+import CartPage from './pages/CartPage/CartPage';
+import ConfirmationPage from './pages/ConfirmationPage/ConfirmationPage';
 
 function App() {
 	return (
@@ -13,16 +15,15 @@ function App() {
 			<Info />
 			<NavBar />
 			<Switch>
-				<Route path="one"></Route>
-				<Route path="two"></Route>
-				<Route path="three"></Route>
-				<Route path="four"></Route>
-				<Route path="five"></Route>
-				<Route path="six"></Route>
 				<Route path="/cameras">
 					<CamerasPage/>
 				</Route>
-				<Route path="eight"></Route>
+				<Route path="/cart">
+					<CartPage/>
+				</Route>
+				<Route path="/confirm">
+					<ConfirmationPage/>
+				</Route>
 			</Switch>
 			<Footer />
 		</div>

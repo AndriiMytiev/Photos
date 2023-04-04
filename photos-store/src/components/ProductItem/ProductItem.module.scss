@@ -12,7 +12,7 @@
     height: 277px;
     display: flex;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 20px !important;
     box-sizing: border-box;
 
     img {
@@ -23,7 +23,7 @@
   &__Text {
     width: 260px;
     height: 120px;
-    padding: 0 20px;
+    padding: 0 20px !important;
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
@@ -56,9 +56,9 @@
         margin: 0;
       }
     }
-      .cartIcon {
-          cursor: pointer;
-      }
+    .cartIcon {
+      cursor: pointer;
+    }
   }
 
   .descriptCont {

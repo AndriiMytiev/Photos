@@ -4,6 +4,8 @@ import Info from './components/Info/Info';
 import Footer from './components/Footer/Footer';
 import { Switch, Route } from 'react-router-dom';
 import NavBar from './components/NavBar/NavBar';
+
+import MainPage from './pages/MainPage/MainPage';
 import CamerasPage from './pages/CamerasPage/CamerasPage';
 import CartPage from './pages/CartPage/CartPage';
 import ConfirmationPage from './pages/ConfirmationPage/ConfirmationPage';
@@ -15,6 +17,9 @@ function App() {
 			<Info />
 			<NavBar />
 			<Switch>
+				<Route path="/" exact>
+					<MainPage />
+				</Route>
 				<Route path="/cameras">
 					<CamerasPage/>
 				</Route>

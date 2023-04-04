@@ -1,0 +1,352 @@
+.FeaturesContainer {
+  padding: 150px 0;
+  background: #E5E5E5;
+
+  .FeaturesItems {
+    width: 1180px;
+    margin: auto;
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    //width: 50%;
+
+    .FeaturesItemOne {
+      position: relative;
+      grid-area: 1 / 1 / 3 / 3;
+
+      img {
+        width: 800px;
+      }
+
+      .OneCam {
+        position: absolute;
+        z-index: 1;
+        width: 300px;
+        top: 30px;
+        left: 45px;
+        width: 476px;
+        height: 325px;
+      }
+
+      .OneCamText {
+        position: absolute;
+        bottom: 70px;
+        left: 65px;
+        z-index: 1;
+        width: 155px;
+        height: 32px;
+      }
+
+      .OneTextName {
+        position: absolute;
+        z-index: 1;
+        top: 50px;
+        right: 40px;
+        color: #FFFFFF;
+        width: 270px;
+        font-size: 24px;
+      }
+
+      .OnePrice {
+        position: absolute;
+        z-index: 1;
+        top: 130px;
+        right: 50px;
+        color: #677283;
+        width: 108px;
+        height: 46px;
+        font-size: 30px;
+        text-decoration: line-through;
+      }
+
+      .TwoPrice {
+        position: absolute;
+        z-index: 1;
+        top: 130px;
+        right: 50px;
+        color: #FFFFFF;;
+        height: 82px;
+        width: 238px;
+        font-size: 70px;
+      }
+
+      .currency {
+        position: absolute;
+        writing-mode: vertical-rl;
+        width: 21px;
+        height: 21px;
+        font-size: 13px;
+        top: 10px;
+        right: -30px;
+      }
+
+      .TwoCurrency {
+        position: absolute;
+        writing-mode: vertical-rl;
+        width: 43px;
+        height: 32px;
+        font-size: 27px;
+        top: 35px;
+        right: -50px;
+      }
+    }
+
+    .buttonCont {
+      position: absolute;
+      bottom: 70px;
+      right: 60px;
+
+      button {
+        width: 40px;
+        height: 40px;
+        background-color: #51AD33;
+        border: none;
+        color: #FFFFFF;
+        font-size: 20px;
+      }
+    }
+  }
+
+  .FeaturesItemTwo {
+    position: relative;
+    grid-area: 1 / 3 / 2 / 4;
+
+    img {
+      width: 380px;
+      height: 210px;
+    }
+
+    .TwoCam {
+      position: absolute;
+      width: 233px;
+      height: 210px;
+      right: 10px;
+    }
+
+    .sale {
+      position: absolute;
+      z-index: 1;
+      background-color: #51AD33;
+      width: 194px;
+      height: 36px;
+      top: 15px;
+      left: 20px;
+      align-items: center;
+
+      p {
+        color: #FFFFFF;
+        align-items: center;
+        margin: 0;
+        font-size: 28px;
+        height: 34px;
+      }
+    }
+
+    .TwoPrice {
+      position: absolute;
+      z-index: 1;
+      color: #FFFFFF;
+      top: 60px;
+      left: 40px;
+      text-align: start;
+
+      p {
+        margin: 0;
+      }
+
+      .TwoPriceText {
+        font-size: 36px;
+      }
+
+      .TwoPriceCurrency {
+        position: absolute;
+        font-size: 16px;
+        top: 20px;
+        right: -20px;
+      }
+
+      .TwoPriceName {
+        font-size: 19px;
+      }
+    }
+
+  }
+
+  .FeaturesItemThree {
+    position: relative;
+    grid-area: 2 / 3 / 3 / 4;
+
+    .ThreeCam {
+      position: absolute;
+      bottom: 5px;
+      left: 11px;
+    }
+
+    .ThreeSale {
+      position: absolute;
+      top: 40px;
+      right: 90px;
+    }
+
+    .ThreePercent {
+      position: absolute;
+      top: 50px;
+      right: 40px;
+    }
+
+    .ThreeText {
+      position: absolute;
+      bottom: 60px;
+      right: 30px;
+    }
+  }
+
+  .FeaturesItemFour {
+    position: relative;
+    grid-area: 3 / 3 / 4 / 4;
+
+    .FourImg {
+      position: absolute;
+      top: 0;
+      right: 25px;
+    }
+
+    .FourName {
+      position: absolute;
+      top: 30px;
+      left: 30px;
+
+      p {
+        margin: 0;
+        color: #FFFFFF;
+        text-align: left;
+        font-size: 20px;
+      }
+
+      p:last-child {
+        font-weight: bold;
+      }
+    }
+
+    .FourPrices {
+      position: absolute;
+      bottom: 20px;
+      left: 30px;
+      text-align: left;
+
+      p {
+        margin: 0;
+        color: #FFFFFF;
+      }
+
+      P:first-child {
+        font-size: 20px;
+        text-decoration: line-through;
+      }
+
+      p:last-child {
+        font-size: 36px;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .FeaturesItemFive {
+    position: relative;
+    grid-area: 3 / 2 / 4 / 3;
+
+    .FiveCam {
+      position: absolute;
+      bottom: -5px;
+      right: 50px;
+    }
+
+    .FiveName {
+      position: absolute;
+      top: 20px;
+      left: 40px;
+
+      p {
+        text-align: left;
+        font-size: 20px;
+        margin: 0;
+        color: #FFFFFF;
+      }
+
+      p:nth-child(2) {
+        font-weight: bold;
+      }
+
+      p:nth-child(3) {
+        font-weight: bold;
+      }
+    }
+
+    .FivePrices {
+      text-align: left;
+      position: absolute;
+      bottom: 20px;
+      left: 40px;
+      color: #FFFFFF;
+
+      p {
+        margin: 0;
+      }
+
+      p:first-child {
+        font-size: 20px;
+        text-decoration: line-through;
+      }
+
+      p:last-child {
+        font-size: 36px;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .FeaturesItemSix {
+    position: relative;
+    grid-area: 3 / 1 / 4 / 2;
+
+    .SixImg {
+      position: absolute;
+      top: 0;
+      left: 20px;
+    }
+
+    .SixName {
+      position: absolute;
+      top: 40px;
+      right: 40px;
+      color: #FFFFFF;
+
+      p {
+        margin: 0;
+      }
+
+      p:first-child {
+        text-transform: uppercase;
+        font-size: 30px;
+        font-weight: bold;
+      }
+
+      p:nth-child(2) {
+        font-size: 36px;
+        text-align: right;
+        font-weight: bold;
+        padding-right: 20px;
+      }
+
+      .SixCurrency {
+        writing-mode: vertical-rl;
+        position: absolute;
+        top: 55px;
+        right: -5px;
+      }
+    }
+  }
+}

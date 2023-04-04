@@ -44,7 +44,6 @@ ProductItem.propTypes = {
 		image: PropTypes.string.isRequired,
 		name: PropTypes.string.isRequired,
 		price: PropTypes.number.isRequired,
-		icon: PropTypes.string.isRequired,
 		available: PropTypes.bool.isRequired,
 		description: PropTypes.string.isRequired,
 	}).isRequired,

@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import styles from './ConfirmationPage.module.scss';
 import {NavLink} from 'react-router-dom';
 import {useSelector} from 'react-redux';
@@ -7,6 +7,7 @@ const ConfirmationPage = () => {
 	const [deliveryTypeChecked, setDeliveryTypeChecked] = useState('');
 	const [total, setTotal] = useState(0);
 
+	const formRef = useRef();
 	const productsInCart = useSelector(state => state.cart.cart);
 
 	useEffect(() => {
@@ -14,6 +15,15 @@ const ConfirmationPage = () => {
 		productsInCart.forEach(item => totalPrice += item.quantity * item.price);
 		setTotal(totalPrice);
 	}, [productsInCart]);
+
+	const onChangeHandler = (e) => {
+		e.preventDefault();
+		const formData = new FormData(formRef.current);
+
+		const name = formData.get('full-name');
+		console.log(name);
+	};
+
 	return (
 		<div className={styles.confirmationPage}>
 			<div className={styles.confirmationPage__container}>
@@ -26,7 +36,7 @@ const ConfirmationPage = () => {
 				</div>
 				<h2 className={styles.page_title}>Оформлення замовлення</h2>
 				<div className={styles.confirmationPage__container__content}>
-					<form className={styles.infoForm}>
+					<form className={styles.infoForm} ref={formRef} onChange={(e) => onChangeHandler(e)}>
 						<div className={styles.section}>
 							<div className={styles.sectionTitle__wrapper}>
 								<p className={styles.sectionTitle}>Контактні дані</p>

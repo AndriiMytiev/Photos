@@ -3,6 +3,7 @@ import styles from './ProductItem.module.scss';
 import PropTypes from 'prop-types';
 import {useDispatch} from 'react-redux';
 import {addToCart} from '../../store/cartSlice';
+import { NavLink } from 'react-router-dom';
 
 // eslint-disable-next-line react/prop-types
 const ProductItem = ({item}) => {
@@ -19,7 +20,7 @@ const ProductItem = ({item}) => {
 				<img src={item.image} alt={item.name}/>
 			</div>
 			<div className={styles.prodItem__Text}>
-				<h3>{item.name}</h3>
+				<NavLink to={'/cameras/' +  item.id}><h3>{item.name}</h3></NavLink>
 				<div className={styles.price}>
 					<h2>{item.price} грн</h2>
 					<p className={styles.hasIn} style={{color: item.available ? '#51AD33' : '#C2CDDD'}}>
@@ -44,6 +45,7 @@ const ProductItem = ({item}) => {
 
 ProductItem.propTypes = {
 	item: PropTypes.shape({
+		id:PropTypes.number.isRequired,
 		image: PropTypes.string.isRequired,
 		name: PropTypes.string.isRequired,
 		price: PropTypes.number.isRequired,

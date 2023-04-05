@@ -25,13 +25,6 @@ const Pagination = ({items, minPrice, maxPrice, typesArray, producersArray, lens
 	const inputRef = useRef();
 
 	useEffect(() => {
-		console.log(matrix);
-		console.log(types);
-		console.log(lens);
-		console.log(producers);
-	}, [matrix, types, lens, producers]);
-
-	useEffect(() => {
 		setProducers(producersArray);
 		setTypes(typesArray);
 		setLens(lensArray);

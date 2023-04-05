@@ -26,11 +26,14 @@ const ProductItem = ({item}) => {
 					<p className={styles.hasIn} style={{color: item.available ? '#51AD33' : '#C2CDDD'}}>
 						{item.available ? 'в наявності' : 'нема в наявності'}
 					</p>
-					<img
-						src='https://firebasestorage.googleapis.com/v0/b/abc-photos-bdafe.appspot.com/o/CartIcon.png?alt=media&token=018d432a-0482-43f0-adb1-43ab30091bff'
-						onClick={() => dispatch(addToCart(item))}
-						className={styles.cartIcon} 
-					/>
+					{item.available &&
+						<img
+							src='https://firebasestorage.googleapis.com/v0/b/abc-photos-bdafe.appspot.com/o/cart_icon.svg?alt=media&token=c29e736a-a56d-46aa-8136-16fad022f0b7'
+							onClick={() => dispatch(addToCart(item))}
+							className={styles.cartIcon}
+							alt='cart-icon'
+						/>
+					}
 				</div>
 			</div>
 			<div className={styles.descriptCont}>

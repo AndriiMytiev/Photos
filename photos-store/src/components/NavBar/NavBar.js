@@ -13,7 +13,7 @@ const NavBar = () => {
 				<NavLink to='/'>Чохли</NavLink>
 				<NavLink to='/'>Студійне обладнання</NavLink>
 				<NavLink to='/'>Штативи</NavLink>
-				<NavLink to='cameras'>Фотоальбоми</NavLink>
+				<NavLink to='cameras'>Фотоапарати</NavLink>
 				<NavLink to='/'>Фотокартки</NavLink>
 			</div>
 		</div>

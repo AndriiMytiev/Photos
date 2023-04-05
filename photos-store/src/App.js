@@ -9,6 +9,7 @@ import MainPage from './pages/MainPage/MainPage';
 import CamerasPage from './pages/CamerasPage/CamerasPage';
 import CartPage from './pages/CartPage/CartPage';
 import ConfirmationPage from './pages/ConfirmationPage/ConfirmationPage';
+import ProductPage from './pages/ProductPage/ProductPage';
 
 function App() {
 	return (
@@ -20,7 +21,7 @@ function App() {
 				<Route path="/" exact>
 					<MainPage />
 				</Route>
-				<Route path="/cameras">
+				<Route path="/cameras" exact>
 					<CamerasPage/>
 				</Route>
 				<Route path="/cart">
@@ -28,6 +29,9 @@ function App() {
 				</Route>
 				<Route path="/confirm">
 					<ConfirmationPage/>
+				</Route>
+				<Route path="/cameras/:id">
+					<ProductPage/>
 				</Route>
 			</Switch>
 			<Footer />

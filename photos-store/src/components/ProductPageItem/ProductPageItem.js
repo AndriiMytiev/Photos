@@ -3,7 +3,6 @@ import {collection, getDocs} from 'firebase/firestore';
 import {db} from '../../firebase';
 import { NavLink } from 'react-router-dom';
 import styles from './ProductPageItem.module.scss';
-import ProductPageInfo from '../ProductPageInfo/ProductPageInfo';
 import { useDispatch } from 'react-redux';
 import { addToCart } from '../../store/cartSlice';
 // eslint-disable-next-line react/prop-types
@@ -54,7 +53,7 @@ const ProductPageItem = ({product}) => {
 						</p>
 						<h2>{item.price} грн</h2>
 						<img src='../img/Cart.svg'/>
-						<button className={styles.BuyBut} onClick={() => dispatch(addToCart(item))} >Купити </button>
+						{item.available && <button className={styles.BuyBut} onClick={() => dispatch(addToCart(item))} >Купити </button>}
 						<div className={styles.PropositionItem}>
 							<div className={styles.Buy}>
 								<div className={styles.BuyUl}>
@@ -85,7 +84,6 @@ const ProductPageItem = ({product}) => {
 				<button>Характеристики</button>
 				<button>Аксесуари</button>
 			</div>
-			<ProductPageInfo />
 		</div>
 	);
 };

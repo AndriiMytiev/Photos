@@ -2,7 +2,7 @@ import './App.css';
 import Header from './components/Header/Header';
 import Info from './components/Info/Info';
 import Footer from './components/Footer/Footer';
-import { Switch, Route } from 'react-router-dom';
+import {Switch, Route, Redirect} from 'react-router-dom';
 import NavBar from './components/NavBar/NavBar';
 
 import MainPage from './pages/MainPage/MainPage';
@@ -32,6 +32,9 @@ function App() {
 				</Route>
 				<Route path="/cameras/:id">
 					<ProductPage/>
+				</Route>
+				<Route path="*">
+					<Redirect to="/"/>
 				</Route>
 			</Switch>
 			<Footer />

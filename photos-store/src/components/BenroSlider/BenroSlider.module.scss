@@ -1,4 +1,5 @@
 .benro{
+    margin-top: -10px;
     position: relative;
     .benroText{
         position: absolute;
@@ -6,6 +7,11 @@
         height: 237px;
         top: 171px;
         right: 291px;
+
+        img {
+            position: relative;
+            z-index: 2;
+        }
     }
     img{
         width: 100%;

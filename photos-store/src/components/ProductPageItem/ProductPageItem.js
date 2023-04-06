@@ -33,7 +33,7 @@ const ProductPageItem = ({product}) => {
 					<li className={styles.arrow}>{'>'}</li>
 					<li><NavLink to='/'>Цифрова техніка</NavLink></li>
 					<li className={styles.arrow}>{'>'}</li>
-					<li><NavLink to='cameras'>Фотопарати</NavLink></li>
+					<li><NavLink to='/cameras'>Фотопарати</NavLink></li>
 					<li className={styles.arrow}>{'>'}</li>
 					<li><NavLink to={'/cameras/' +  item.id}>{item.name}</NavLink></li>
 				</ul>
